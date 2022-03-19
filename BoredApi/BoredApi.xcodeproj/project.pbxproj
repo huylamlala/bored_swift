@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		7838F98727E61B8B006D6600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7838F98627E61B8B006D6600 /* Preview Assets.xcassets */; };
 		7838F99227E61B8B006D6600 /* BoredApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99127E61B8B006D6600 /* BoredApiTests.swift */; };
 		7838F99D27E61B8B006D6600 /* BoredApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */; };
+		7838F9B627E61EAD006D6600 /* URLRequestConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9AF27E61EAD006D6600 /* URLRequestConvertable.swift */; };
+		7838F9B727E61EAD006D6600 /* ActivityURLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9B127E61EAD006D6600 /* ActivityURLRequests.swift */; };
+		7838F9B827E61EAD006D6600 /* ActivityNetworkingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9B227E61EAD006D6600 /* ActivityNetworkingServices.swift */; };
+		7838F9BB27E61EAD006D6600 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9B527E61EAD006D6600 /* APIRequest.swift */; };
+		7838F9BE27E61F2B006D6600 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9BD27E61F2B006D6600 /* Constants.swift */; };
+		7838F9C127E62211006D6600 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9C027E62211006D6600 /* Activity.swift */; };
+		7838F9C427E62439006D6600 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9C327E62439006D6600 /* ActivityService.swift */; };
+		7838F9C627E62706006D6600 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9C527E62706006D6600 /* ApiError.swift */; };
 		C52DC1FDF2A527C2D5C188CB /* Pods_BoredApi_BoredApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */; };
 		D63A62B55DAC7495EC4C29E7 /* Pods_BoredApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +59,16 @@
 		7838F99827E61B8B006D6600 /* BoredApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiUITests.swift; sourceTree = "<group>"; };
 		7838F99E27E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7838F9AF27E61EAD006D6600 /* URLRequestConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertable.swift; sourceTree = "<group>"; };
+		7838F9B127E61EAD006D6600 /* ActivityURLRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityURLRequests.swift; sourceTree = "<group>"; };
+		7838F9B227E61EAD006D6600 /* ActivityNetworkingServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityNetworkingServices.swift; sourceTree = "<group>"; };
+		7838F9B527E61EAD006D6600 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		7838F9BD27E61F2B006D6600 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7838F9C027E62211006D6600 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		7838F9C327E62439006D6600 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		7838F9C527E62706006D6600 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi-BoredApiUITests.release.xcconfig"; path = "Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "BoredApiTests-BoredApiMocks.generated.swift"; path = "MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift"; sourceTree = "<group>"; };
+		A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "BoredApiTests-BoredApiMocks.generated.swift"; path = "MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift"; sourceTree = "<group>"; };
 		B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFFFE45EFDC149EB7099FD6 /* Pods-BoredApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi.debug.xcconfig"; path = "Target Support Files/Pods-BoredApi/Pods-BoredApi.debug.xcconfig"; sourceTree = "<group>"; };
 		C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApi_BoredApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +115,6 @@
 				F05B2C5473F0A6EE94191D31 /* Pods-BoredApiTests.debug.xcconfig */,
 				29CAC458336641F210E0A3EA /* Pods-BoredApiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,6 +144,10 @@
 		7838F97E27E61B89006D6600 /* BoredApi */ = {
 			isa = PBXGroup;
 			children = (
+				7838F9BF27E62207006D6600 /* Models */,
+				7838F9BC27E61F04006D6600 /* Common */,
+				7838F9AC27E61E30006D6600 /* Services */,
+				7838F9AA27E61E21006D6600 /* Views */,
 				7838F97F27E61B89006D6600 /* BoredApiApp.swift */,
 				7838F98127E61B89006D6600 /* ContentView.swift */,
 				7838F98327E61B8B006D6600 /* Assets.xcassets */,
@@ -162,6 +181,74 @@
 				7838F99E27E61B8B006D6600 /* Info.plist */,
 			);
 			path = BoredApiUITests;
+			sourceTree = "<group>";
+		};
+		7838F9AA27E61E21006D6600 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7838F9AC27E61E30006D6600 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9C227E62424006D6600 /* Activity */,
+				7838F9AD27E61E82006D6600 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7838F9AD27E61E82006D6600 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9C527E62706006D6600 /* ApiError.swift */,
+				7838F9B527E61EAD006D6600 /* APIRequest.swift */,
+				7838F9AE27E61EAD006D6600 /* URLRequestsAndService */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7838F9AE27E61EAD006D6600 /* URLRequestsAndService */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9AF27E61EAD006D6600 /* URLRequestConvertable.swift */,
+				7838F9B027E61EAD006D6600 /* Activity */,
+			);
+			path = URLRequestsAndService;
+			sourceTree = "<group>";
+		};
+		7838F9B027E61EAD006D6600 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9B127E61EAD006D6600 /* ActivityURLRequests.swift */,
+				7838F9B227E61EAD006D6600 /* ActivityNetworkingServices.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		7838F9BC27E61F04006D6600 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9BD27E61F2B006D6600 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7838F9BF27E62207006D6600 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9C027E62211006D6600 /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7838F9C227E62424006D6600 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				7838F9C327E62439006D6600 /* ActivityService.swift */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 		8EA914A71C495F448B0AF2C8 /* Frameworks */ = {
@@ -467,7 +554,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7838F98227E61B89006D6600 /* ContentView.swift in Sources */,
+				7838F9C427E62439006D6600 /* ActivityService.swift in Sources */,
 				7838F98027E61B89006D6600 /* BoredApiApp.swift in Sources */,
+				7838F9C627E62706006D6600 /* ApiError.swift in Sources */,
+				7838F9B827E61EAD006D6600 /* ActivityNetworkingServices.swift in Sources */,
+				7838F9B727E61EAD006D6600 /* ActivityURLRequests.swift in Sources */,
+				7838F9BB27E61EAD006D6600 /* APIRequest.swift in Sources */,
+				7838F9C127E62211006D6600 /* Activity.swift in Sources */,
+				7838F9B627E61EAD006D6600 /* URLRequestConvertable.swift in Sources */,
+				7838F9BE27E61F2B006D6600 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
