@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Activity: Decodable {
+struct Activity: Decodable, Equatable {
   let activity: String
   let accessibility: Double
   let type: ActivityType

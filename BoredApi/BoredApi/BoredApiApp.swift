@@ -11,7 +11,7 @@ import SwiftUI
 struct BoredApiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ActivitiesListView(activityType: .education)
         }
     }
 }
