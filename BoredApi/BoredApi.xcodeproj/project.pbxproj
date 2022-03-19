@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D135C64431BBF8BD7A093CA /* Pods_BoredApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79E2A68B10B0226A8194286 /* Pods_BoredApi.framework */; };
+		4990E90F3598309D53A06472 /* BoredApiTests-BoredApiMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */; };
+		7838F98027E61B89006D6600 /* BoredApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F97F27E61B89006D6600 /* BoredApiApp.swift */; };
+		7838F98227E61B89006D6600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F98127E61B89006D6600 /* ContentView.swift */; };
+		7838F98427E61B8B006D6600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7838F98327E61B8B006D6600 /* Assets.xcassets */; };
+		7838F98727E61B8B006D6600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7838F98627E61B8B006D6600 /* Preview Assets.xcassets */; };
+		7838F99227E61B8B006D6600 /* BoredApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99127E61B8B006D6600 /* BoredApiTests.swift */; };
+		7838F99D27E61B8B006D6600 /* BoredApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */; };
+		C52DC1FDF2A527C2D5C188CB /* Pods_BoredApi_BoredApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */; };
+		D63A62B55DAC7495EC4C29E7 /* Pods_BoredApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7838F98E27E61B8B006D6600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7838F97427E61B89006D6600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7838F97B27E61B89006D6600;
+			remoteInfo = BoredApi;
+		};
+		7838F99927E61B8B006D6600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7838F97427E61B89006D6600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7838F97B27E61B89006D6600;
+			remoteInfo = BoredApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29CAC458336641F210E0A3EA /* Pods-BoredApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApiTests.release.xcconfig"; path = "Target Support Files/Pods-BoredApiTests/Pods-BoredApiTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DC2249B69BC3BD6F5B00E68 /* Pods-BoredApi-BoredApiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi-BoredApiUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7838F97C27E61B89006D6600 /* BoredApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7838F97F27E61B89006D6600 /* BoredApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiApp.swift; sourceTree = "<group>"; };
+		7838F98127E61B89006D6600 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7838F98327E61B8B006D6600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7838F98627E61B8B006D6600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7838F98827E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7838F98D27E61B8B006D6600 /* BoredApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7838F99127E61B8B006D6600 /* BoredApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiTests.swift; sourceTree = "<group>"; };
+		7838F99327E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7838F99827E61B8B006D6600 /* BoredApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiUITests.swift; sourceTree = "<group>"; };
+		7838F99E27E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi-BoredApiUITests.release.xcconfig"; path = "Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "BoredApiTests-BoredApiMocks.generated.swift"; path = "MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift"; sourceTree = "<group>"; };
+		B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFFFE45EFDC149EB7099FD6 /* Pods-BoredApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi.debug.xcconfig"; path = "Target Support Files/Pods-BoredApi/Pods-BoredApi.debug.xcconfig"; sourceTree = "<group>"; };
+		C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApi_BoredApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79E2A68B10B0226A8194286 /* Pods_BoredApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C780B753EA780928B5F00E /* Pods-BoredApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi.release.xcconfig"; path = "Target Support Files/Pods-BoredApi/Pods-BoredApi.release.xcconfig"; sourceTree = "<group>"; };
+		F05B2C5473F0A6EE94191D31 /* Pods-BoredApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApiTests.debug.xcconfig"; path = "Target Support Files/Pods-BoredApiTests/Pods-BoredApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7838F97927E61B89006D6600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D135C64431BBF8BD7A093CA /* Pods_BoredApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F98A27E61B8B006D6600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63A62B55DAC7495EC4C29E7 /* Pods_BoredApiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F99527E61B8B006D6600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52DC1FDF2A527C2D5C188CB /* Pods_BoredApi_BoredApiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		334846E3431B24694A26A479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDFFFE45EFDC149EB7099FD6 /* Pods-BoredApi.debug.xcconfig */,
+				D7C780B753EA780928B5F00E /* Pods-BoredApi.release.xcconfig */,
+				3DC2249B69BC3BD6F5B00E68 /* Pods-BoredApi-BoredApiUITests.debug.xcconfig */,
+				7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */,
+				F05B2C5473F0A6EE94191D31 /* Pods-BoredApiTests.debug.xcconfig */,
+				29CAC458336641F210E0A3EA /* Pods-BoredApiTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7838F97327E61B89006D6600 = {
+			isa = PBXGroup;
+			children = (
+				7838F97E27E61B89006D6600 /* BoredApi */,
+				7838F99027E61B8B006D6600 /* BoredApiTests */,
+				7838F99B27E61B8B006D6600 /* BoredApiUITests */,
+				7838F97D27E61B89006D6600 /* Products */,
+				334846E3431B24694A26A479 /* Pods */,
+				8EA914A71C495F448B0AF2C8 /* Frameworks */,
+				A2EA53F7788C3E60F934DFAB /* Generated Mocks */,
+			);
+			sourceTree = "<group>";
+		};
+		7838F97D27E61B89006D6600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7838F97C27E61B89006D6600 /* BoredApi.app */,
+				7838F98D27E61B8B006D6600 /* BoredApiTests.xctest */,
+				7838F99827E61B8B006D6600 /* BoredApiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7838F97E27E61B89006D6600 /* BoredApi */ = {
+			isa = PBXGroup;
+			children = (
+				7838F97F27E61B89006D6600 /* BoredApiApp.swift */,
+				7838F98127E61B89006D6600 /* ContentView.swift */,
+				7838F98327E61B8B006D6600 /* Assets.xcassets */,
+				7838F98827E61B8B006D6600 /* Info.plist */,
+				7838F98527E61B8B006D6600 /* Preview Content */,
+			);
+			path = BoredApi;
+			sourceTree = "<group>";
+		};
+		7838F98527E61B8B006D6600 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7838F98627E61B8B006D6600 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7838F99027E61B8B006D6600 /* BoredApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7838F99127E61B8B006D6600 /* BoredApiTests.swift */,
+				7838F99327E61B8B006D6600 /* Info.plist */,
+			);
+			path = BoredApiTests;
+			sourceTree = "<group>";
+		};
+		7838F99B27E61B8B006D6600 /* BoredApiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */,
+				7838F99E27E61B8B006D6600 /* Info.plist */,
+			);
+			path = BoredApiUITests;
+			sourceTree = "<group>";
+		};
+		8EA914A71C495F448B0AF2C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C79E2A68B10B0226A8194286 /* Pods_BoredApi.framework */,
+				C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */,
+				B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2EA53F7788C3E60F934DFAB /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7838F97B27E61B89006D6600 /* BoredApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7838F9A127E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApi" */;
+			buildPhases = (
+				D8E0574A7AE0483421DE156B /* [CP] Check Pods Manifest.lock */,
+				7838F97827E61B89006D6600 /* Sources */,
+				7838F97927E61B89006D6600 /* Frameworks */,
+				7838F97A27E61B89006D6600 /* Resources */,
+				C9EF22F3D53E609566A8142A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoredApi;
+			productName = BoredApi;
+			productReference = 7838F97C27E61B89006D6600 /* BoredApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7838F98C27E61B8B006D6600 /* BoredApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7838F9A427E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApiTests" */;
+			buildPhases = (
+				BA2C61DD97C1A2467E811051 /* [CP] Check Pods Manifest.lock */,
+				CAF6F0678301CE0E983E9643 /* Generate Mockingbird Mocks */,
+				7838F98927E61B8B006D6600 /* Sources */,
+				7838F98A27E61B8B006D6600 /* Frameworks */,
+				7838F98B27E61B8B006D6600 /* Resources */,
+				43720222BB3178B92685AD79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7838F98F27E61B8B006D6600 /* PBXTargetDependency */,
+			);
+			name = BoredApiTests;
+			productName = BoredApiTests;
+			productReference = 7838F98D27E61B8B006D6600 /* BoredApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7838F99727E61B8B006D6600 /* BoredApiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7838F9A727E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApiUITests" */;
+			buildPhases = (
+				81DC98497AA3ECCF8D98BA26 /* [CP] Check Pods Manifest.lock */,
+				7838F99427E61B8B006D6600 /* Sources */,
+				7838F99527E61B8B006D6600 /* Frameworks */,
+				7838F99627E61B8B006D6600 /* Resources */,
+				B9CA09222DA7612B24E9EBF9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7838F99A27E61B8B006D6600 /* PBXTargetDependency */,
+			);
+			name = BoredApiUITests;
+			productName = BoredApiUITests;
+			productReference = 7838F99827E61B8B006D6600 /* BoredApiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7838F97427E61B89006D6600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7838F97B27E61B89006D6600 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					7838F98C27E61B8B006D6600 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 7838F97B27E61B89006D6600;
+					};
+					7838F99727E61B8B006D6600 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 7838F97B27E61B89006D6600;
+					};
+				};
+			};
+			buildConfigurationList = 7838F97727E61B89006D6600 /* Build configuration list for PBXProject "BoredApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7838F97327E61B89006D6600;
+			productRefGroup = 7838F97D27E61B89006D6600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7838F97B27E61B89006D6600 /* BoredApi */,
+				7838F98C27E61B8B006D6600 /* BoredApiTests */,
+				7838F99727E61B8B006D6600 /* BoredApiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7838F97A27E61B89006D6600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7838F98727E61B8B006D6600 /* Preview Assets.xcassets in Resources */,
+				7838F98427E61B8B006D6600 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F98B27E61B8B006D6600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F99627E61B8B006D6600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43720222BB3178B92685AD79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApiTests/Pods-BoredApiTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApiTests/Pods-BoredApiTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoredApiTests/Pods-BoredApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81DC98497AA3ECCF8D98BA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoredApi-BoredApiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CA09222DA7612B24E9EBF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA2C61DD97C1A2467E811051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoredApiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9EF22F3D53E609566A8142A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApi/Pods-BoredApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredApi/Pods-BoredApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoredApi/Pods-BoredApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF6F0678301CE0E983E9643 /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n\"${SRCROOT}/Pods/MockingbirdFramework/mockingbird\" generate --targets \"BoredApi\" --only-protocols --outputs \"${SRCROOT}/MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift\"";
+		};
+		D8E0574A7AE0483421DE156B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoredApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7838F97827E61B89006D6600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7838F98227E61B89006D6600 /* ContentView.swift in Sources */,
+				7838F98027E61B89006D6600 /* BoredApiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F98927E61B8B006D6600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7838F99227E61B8B006D6600 /* BoredApiTests.swift in Sources */,
+				4990E90F3598309D53A06472 /* BoredApiTests-BoredApiMocks.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7838F99427E61B8B006D6600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7838F99D27E61B8B006D6600 /* BoredApiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7838F98F27E61B8B006D6600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7838F97B27E61B89006D6600 /* BoredApi */;
+			targetProxy = 7838F98E27E61B8B006D6600 /* PBXContainerItemProxy */;
+		};
+		7838F99A27E61B8B006D6600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7838F97B27E61B89006D6600 /* BoredApi */;
+			targetProxy = 7838F99927E61B8B006D6600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7838F99F27E61B8B006D6600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7838F9A027E61B8B006D6600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7838F9A227E61B8B006D6600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFFFE45EFDC149EB7099FD6 /* Pods-BoredApi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoredApi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoredApi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7838F9A327E61B8B006D6600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C780B753EA780928B5F00E /* Pods-BoredApi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoredApi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoredApi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7838F9A527E61B8B006D6600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05B2C5473F0A6EE94191D31 /* Pods-BoredApiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoredApiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoredApi.app/BoredApi";
+			};
+			name = Debug;
+		};
+		7838F9A627E61B8B006D6600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29CAC458336641F210E0A3EA /* Pods-BoredApiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoredApiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoredApi.app/BoredApi";
+			};
+			name = Release;
+		};
+		7838F9A827E61B8B006D6600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC2249B69BC3BD6F5B00E68 /* Pods-BoredApi-BoredApiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoredApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoredApi;
+			};
+			name = Debug;
+		};
+		7838F9A927E61B8B006D6600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BoredApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-purpose-only.BoredApiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoredApi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7838F97727E61B89006D6600 /* Build configuration list for PBXProject "BoredApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7838F99F27E61B8B006D6600 /* Debug */,
+				7838F9A027E61B8B006D6600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7838F9A127E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7838F9A227E61B8B006D6600 /* Debug */,
+				7838F9A327E61B8B006D6600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7838F9A427E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7838F9A527E61B8B006D6600 /* Debug */,
+				7838F9A627E61B8B006D6600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7838F9A727E61B8B006D6600 /* Build configuration list for PBXNativeTarget "BoredApiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7838F9A827E61B8B006D6600 /* Debug */,
+				7838F9A927E61B8B006D6600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7838F97427E61B89006D6600 /* Project object */;
+}

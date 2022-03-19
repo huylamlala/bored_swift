@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.5.0)
+  - MockingbirdFramework (0.19.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - MockingbirdFramework
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MockingbirdFramework
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  MockingbirdFramework: 101c2cc12a9fb0933cb0581cbe41f756c9898938
+
+PODFILE CHECKSUM: 672feaf06040fadc4990b78fc386a3b049ee5c61
+
+COCOAPODS: 1.11.2
