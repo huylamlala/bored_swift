@@ -8,7 +8,7 @@
 
 import Alamofire
 
-enum ActivityURLRequests: RouterURLRequestConvertible {
+enum ActivityURLRequests: RouterURLRequestConvertible, Equatable {
   case getActivity(type: ActivityType)
     
     var method: HTTPMethod {

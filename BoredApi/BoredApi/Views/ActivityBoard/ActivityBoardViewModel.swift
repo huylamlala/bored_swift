@@ -23,6 +23,7 @@ class ActivityBoardViewModel: ObservableObject {
   
   func setupBinding() {
     $presentingSettings
+      .removeDuplicates()
       .filter { !$0 }
       .sink { [weak self] presentingSettings in
         if presentingSettings { return }
@@ -31,10 +32,12 @@ class ActivityBoardViewModel: ObservableObject {
       .store(in: &cancellableSet)
   }
   
-  func reloadData() {
+  private func reloadData() {
     state = .loading
     activityService.getExpectingActivitiesAmount()
-      .sink { [weak self] in self?.expectingActivitiesAmount = $0 }
+      .sink { [weak self] in
+        self?.expectingActivitiesAmount = $0
+      }
       .cancel()
     activityService.getSubscribingActivityTypes()
       .sink { [weak self] in

@@ -13,7 +13,6 @@
 		7838F98227E61B89006D6600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F98127E61B89006D6600 /* ContentView.swift */; };
 		7838F98427E61B8B006D6600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7838F98327E61B8B006D6600 /* Assets.xcassets */; };
 		7838F98727E61B8B006D6600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7838F98627E61B8B006D6600 /* Preview Assets.xcassets */; };
-		7838F99227E61B8B006D6600 /* BoredApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99127E61B8B006D6600 /* BoredApiTests.swift */; };
 		7838F99D27E61B8B006D6600 /* BoredApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */; };
 		7838F9B627E61EAD006D6600 /* URLRequestConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9AF27E61EAD006D6600 /* URLRequestConvertable.swift */; };
 		7838F9B727E61EAD006D6600 /* ActivityURLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9B127E61EAD006D6600 /* ActivityURLRequests.swift */; };
@@ -37,6 +36,9 @@
 		78450CC527E7381B00084989 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CC427E7381B00084989 /* ActivityDetailView.swift */; };
 		78450CC827E743DC00084989 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CC727E743DC00084989 /* SettingsView.swift */; };
 		78450CCA27E743EB00084989 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CC927E743EB00084989 /* SettingsViewModel.swift */; };
+		78450CCC27E7791300084989 /* ActivityBoardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CCB27E7791300084989 /* ActivityBoardViewModelTests.swift */; };
+		784ECAAE27E7810C00DAEBC5 /* ActivitiesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784ECAAD27E7810C00DAEBC5 /* ActivitiesListViewModelTests.swift */; };
+		784ECAB027E784F300DAEBC5 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784ECAAF27E784F300DAEBC5 /* SettingsViewModelTests.swift */; };
 		C52DC1FDF2A527C2D5C188CB /* Pods_BoredApi_BoredApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */; };
 		D63A62B55DAC7495EC4C29E7 /* Pods_BoredApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,7 +70,6 @@
 		7838F98627E61B8B006D6600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7838F98827E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7838F98D27E61B8B006D6600 /* BoredApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7838F99127E61B8B006D6600 /* BoredApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiTests.swift; sourceTree = "<group>"; };
 		7838F99327E61B8B006D6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7838F99827E61B8B006D6600 /* BoredApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7838F99C27E61B8B006D6600 /* BoredApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiUITests.swift; sourceTree = "<group>"; };
@@ -95,6 +96,9 @@
 		78450CC427E7381B00084989 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 		78450CC727E743DC00084989 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		78450CC927E743EB00084989 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		78450CCB27E7791300084989 /* ActivityBoardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBoardViewModelTests.swift; sourceTree = "<group>"; };
+		784ECAAD27E7810C00DAEBC5 /* ActivitiesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModelTests.swift; sourceTree = "<group>"; };
+		784ECAAF27E784F300DAEBC5 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 		7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi-BoredApiUITests.release.xcconfig"; path = "Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "BoredApiTests-BoredApiMocks.generated.swift"; path = "MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift"; sourceTree = "<group>"; };
 		B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,8 +201,10 @@
 		7838F99027E61B8B006D6600 /* BoredApiTests */ = {
 			isa = PBXGroup;
 			children = (
-				7838F99127E61B8B006D6600 /* BoredApiTests.swift */,
 				7838F99327E61B8B006D6600 /* Info.plist */,
+				78450CCB27E7791300084989 /* ActivityBoardViewModelTests.swift */,
+				784ECAAD27E7810C00DAEBC5 /* ActivitiesListViewModelTests.swift */,
+				784ECAAF27E784F300DAEBC5 /* SettingsViewModelTests.swift */,
 			);
 			path = BoredApiTests;
 			sourceTree = "<group>";
@@ -674,7 +680,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7838F99227E61B8B006D6600 /* BoredApiTests.swift in Sources */,
+				78450CCC27E7791300084989 /* ActivityBoardViewModelTests.swift in Sources */,
+				784ECAAE27E7810C00DAEBC5 /* ActivitiesListViewModelTests.swift in Sources */,
+				784ECAB027E784F300DAEBC5 /* SettingsViewModelTests.swift in Sources */,
 				4990E90F3598309D53A06472 /* BoredApiTests-BoredApiMocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

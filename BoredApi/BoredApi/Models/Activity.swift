@@ -27,7 +27,7 @@ enum ActivityType: String, Decodable, CaseIterable {
   case education, recreational, social, diy, charity, cooking, relaxation, music, busywork
 }
 
-enum ExpectingActivitiesAmount: Int {
+enum ExpectingActivitiesAmount: Int, CaseIterable {
   case one = 1
   case two
   case three
