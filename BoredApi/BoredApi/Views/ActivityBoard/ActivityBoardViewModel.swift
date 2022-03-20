@@ -24,7 +24,8 @@ class ActivityBoardViewModel: ObservableObject {
   func setupBinding() {
     $presentingSettings
       .filter { !$0 }
-      .sink { [weak self] _ in
+      .sink { [weak self] presentingSettings in
+        if presentingSettings { return }
         self?.reloadData()
       }
       .store(in: &cancellableSet)

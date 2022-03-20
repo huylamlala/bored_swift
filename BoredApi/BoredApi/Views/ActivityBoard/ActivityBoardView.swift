@@ -19,8 +19,10 @@ struct ActivityBoardView: View {
           initialView
         case .loading:
           progressView
-        case .loaded:
+        case .loaded where !viewModel.presentingSettings:
           tabsView
+        default:
+          progressView
         }
       }
       .navigationTitle("Activity Board")
@@ -53,14 +55,14 @@ struct ActivityBoardView: View {
   }
   
   var tabsView: some View {
-    ScrollView {
-      LazyVStack {
-        ForEach(viewModel.subscribingActivityTypes, id: \.self) { type in
-          ActivitiesListView(activityType: type, numberOfResult: viewModel.expectingActivitiesAmount)
-        }
+    TabView {
+      ForEach(viewModel.subscribingActivityTypes, id: \.self) { type in
+        ActivitiesListView(activityType: type, numberOfResult: viewModel.expectingActivitiesAmount)
       }
     }
-    .edgesIgnoringSafeArea([.bottom])
+    .tabViewStyle(PageTabViewStyle())
+    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+    .edgesIgnoringSafeArea([.top, .bottom])
   }
 }
 

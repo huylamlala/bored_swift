@@ -19,6 +19,7 @@ struct ActivitiesListView: View {
   @State var selection: Int? = nil
   
   var body: some View {
+    ScrollView{
       VStack {
         HStack {
           Text(activityType.rawValue.uppercased())
@@ -40,9 +41,9 @@ struct ActivitiesListView: View {
           }
         }
         Spacer()
-        Divider()
       }
-    
+      
+    }
   }
   
   var progressView: some View {
