@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct BoredApiApp: App {
-    var body: some Scene {
-        WindowGroup {
-          ActivitiesListView(activityType: .education)
-        }
+  @StateObject private var envSettings = EnvironmentSettings()
+
+ 
+  var body: some Scene {
+    WindowGroup {
+      ActivityBoardView()
+        .environmentObject(envSettings)
     }
+  }
 }

@@ -23,6 +23,19 @@ struct Activity: Decodable, Equatable {
   }
 }
 
-enum ActivityType: String, Decodable {
+enum ActivityType: String, Decodable, CaseIterable {
   case education, recreational, social, diy, charity, cooking, relaxation, music, busywork
+}
+
+enum ExpectingActivitiesAmount: Int {
+  case one = 1
+  case two
+  case three
+  case four
+  case five
+  case six
+  case seven
+  case eight
+  case nine
+  case ten
 }

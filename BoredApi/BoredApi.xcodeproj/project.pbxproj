@@ -27,6 +27,13 @@
 		7838F9CB27E62AE5006D6600 /* ActivitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9CA27E62AE5006D6600 /* ActivitiesListViewModel.swift */; };
 		7838F9CE27E63821006D6600 /* Publishers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9CD27E63821006D6600 /* Publishers+Extensions.swift */; };
 		7838F9D127E63E96006D6600 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7838F9D027E63E96006D6600 /* CenterView.swift */; };
+		78450CB327E6DE6800084989 /* ActivityBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CB227E6DE6800084989 /* ActivityBoardView.swift */; };
+		78450CB527E6DE7100084989 /* ActivityBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CB427E6DE7100084989 /* ActivityBoardViewModel.swift */; };
+		78450CB727E7125300084989 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CB627E7125300084989 /* UserDefaults+Extensions.swift */; };
+		78450CB927E7216F00084989 /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CB827E7216F00084989 /* EnvironmentSettings.swift */; };
+		78450CBB27E7225400084989 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CBA27E7225400084989 /* ServicesCoordinator.swift */; };
+		78450CC027E725A700084989 /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CBF27E725A700084989 /* AppTypography.swift */; };
+		78450CC227E72DB900084989 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78450CC127E72DB900084989 /* AppColors.swift */; };
 		C52DC1FDF2A527C2D5C188CB /* Pods_BoredApi_BoredApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FA7C76692EAB14D741FC2E /* Pods_BoredApi_BoredApiUITests.framework */; };
 		D63A62B55DAC7495EC4C29E7 /* Pods_BoredApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +82,13 @@
 		7838F9CA27E62AE5006D6600 /* ActivitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModel.swift; sourceTree = "<group>"; };
 		7838F9CD27E63821006D6600 /* Publishers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Extensions.swift"; sourceTree = "<group>"; };
 		7838F9D027E63E96006D6600 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
+		78450CB227E6DE6800084989 /* ActivityBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBoardView.swift; sourceTree = "<group>"; };
+		78450CB427E6DE7100084989 /* ActivityBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBoardViewModel.swift; sourceTree = "<group>"; };
+		78450CB627E7125300084989 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		78450CB827E7216F00084989 /* EnvironmentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSettings.swift; sourceTree = "<group>"; };
+		78450CBA27E7225400084989 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
+		78450CBF27E725A700084989 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
+		78450CC127E72DB900084989 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		7DBD6288415C9A6357511AE4 /* Pods-BoredApi-BoredApiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredApi-BoredApiUITests.release.xcconfig"; path = "Target Support Files/Pods-BoredApi-BoredApiUITests/Pods-BoredApi-BoredApiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A77C5EF58595800BD9CF3C25 /* BoredApiTests-BoredApiMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "BoredApiTests-BoredApiMocks.generated.swift"; path = "MockingbirdMocks/BoredApiTests-BoredApiMocks.generated.swift"; sourceTree = "<group>"; };
 		B908232AABE60002A25E49A7 /* Pods_BoredApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +209,7 @@
 		7838F9AA27E61E21006D6600 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				78450CB127E6DE5400084989 /* ActivityBoard */,
 				7838F9C727E62AC6006D6600 /* ActivitiesList */,
 			);
 			path = Views;
@@ -242,6 +257,10 @@
 			children = (
 				7838F9CF27E63E83006D6600 /* Views */,
 				7838F9BD27E61F2B006D6600 /* Constants.swift */,
+				78450CB827E7216F00084989 /* EnvironmentSettings.swift */,
+				78450CBA27E7225400084989 /* ServicesCoordinator.swift */,
+				78450CBF27E725A700084989 /* AppTypography.swift */,
+				78450CC127E72DB900084989 /* AppColors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -275,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				7838F9CD27E63821006D6600 /* Publishers+Extensions.swift */,
+				78450CB627E7125300084989 /* UserDefaults+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +305,15 @@
 				7838F9D027E63E96006D6600 /* CenterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		78450CB127E6DE5400084989 /* ActivityBoard */ = {
+			isa = PBXGroup;
+			children = (
+				78450CB227E6DE6800084989 /* ActivityBoardView.swift */,
+				78450CB427E6DE7100084989 /* ActivityBoardViewModel.swift */,
+			);
+			path = ActivityBoard;
 			sourceTree = "<group>";
 		};
 		8EA914A71C495F448B0AF2C8 /* Frameworks */ = {
@@ -590,17 +619,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7838F98227E61B89006D6600 /* ContentView.swift in Sources */,
+				78450CB727E7125300084989 /* UserDefaults+Extensions.swift in Sources */,
 				7838F9CB27E62AE5006D6600 /* ActivitiesListViewModel.swift in Sources */,
+				78450CBB27E7225400084989 /* ServicesCoordinator.swift in Sources */,
 				7838F9D127E63E96006D6600 /* CenterView.swift in Sources */,
 				7838F9C427E62439006D6600 /* ActivityService.swift in Sources */,
+				78450CB327E6DE6800084989 /* ActivityBoardView.swift in Sources */,
 				7838F98027E61B89006D6600 /* BoredApiApp.swift in Sources */,
 				7838F9C927E62ADD006D6600 /* ActivitiesListView.swift in Sources */,
 				7838F9C627E62706006D6600 /* ApiError.swift in Sources */,
+				78450CC027E725A700084989 /* AppTypography.swift in Sources */,
+				78450CB527E6DE7100084989 /* ActivityBoardViewModel.swift in Sources */,
 				7838F9B827E61EAD006D6600 /* ActivityNetworkingServices.swift in Sources */,
 				7838F9B727E61EAD006D6600 /* ActivityURLRequests.swift in Sources */,
 				7838F9CE27E63821006D6600 /* Publishers+Extensions.swift in Sources */,
 				7838F9BB27E61EAD006D6600 /* APIRequest.swift in Sources */,
+				78450CB927E7216F00084989 /* EnvironmentSettings.swift in Sources */,
 				7838F9C127E62211006D6600 /* Activity.swift in Sources */,
+				78450CC227E72DB900084989 /* AppColors.swift in Sources */,
 				7838F9B627E61EAD006D6600 /* URLRequestConvertable.swift in Sources */,
 				7838F9BE27E61F2B006D6600 /* Constants.swift in Sources */,
 			);

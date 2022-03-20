@@ -21,9 +21,6 @@ class ActivitiesListViewModel: ObservableObject {
   
   func getActivities(type: ActivityType, numberOfResult: Int) {
     state = .loading
-    let minNumberOfResult = 1
-    let maxNumberOfResult = 10
-    let numberOfResult = max(min(numberOfResult, maxNumberOfResult), minNumberOfResult)
     var activities: [Activity] = []
     var upstreams: [AnyPublisher<Result<Activity, APIError>, Never>] = []
     for _ in 1...numberOfResult {
