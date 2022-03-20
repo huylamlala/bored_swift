@@ -38,7 +38,9 @@ class ActivitiesListViewModel: ObservableObject {
             return
           }
         }
-        self?.state = .activitiesLoaded(activities)
+        self?.state = .activitiesLoaded(activities.sorted(by: {
+          $0.accessibility < $1.accessibility
+        }))
         
       }
       .store(in: &cancellableSet)

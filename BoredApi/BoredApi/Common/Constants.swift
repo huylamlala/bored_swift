@@ -9,4 +9,8 @@ import Foundation
 
 enum Constants {
   static let baseUrl: String = "https://www.boredapi.com/api/"
+  enum UserDefaultsKeys: String {
+    case expectingActivitiesAmount
+    case subscribingActivityTypes
+  }
 }

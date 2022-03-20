@@ -7,13 +7,12 @@
 
 import Foundation
 
-
 extension UserDefaults {
   @objc dynamic var expectingActivitiesAmount: Int {
-    return integer(forKey: "expectingActivitiesAmount")
+    return integer(forKey: Constants.UserDefaultsKeys.expectingActivitiesAmount.rawValue)
   }
   
   @objc dynamic var subscribingActivityTypes: [String] {
-    return stringArray(forKey: "subscribingActivityTypes") ?? []
+    return stringArray(forKey: Constants.UserDefaultsKeys.subscribingActivityTypes.rawValue) ?? []
   }
 }

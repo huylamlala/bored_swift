@@ -9,19 +9,35 @@ import SwiftUI
 
 struct ActivityBoardView: View {
   @EnvironmentObject var envSettings: EnvironmentSettings
-  @ObservedObject var viewModel: ActivityBoardViewModel = ActivityBoardViewModel()
+  @ObservedObject var viewModel = ActivityBoardViewModel()
   
   var body: some View {
-    Group {
-      switch viewModel.state {
-      case .initial:
-        initialView
-      case .loading:
-        progressView
-      case .loaded:
-        tabsView
+    NavigationView{
+      Group {
+        switch viewModel.state {
+        case .initial:
+          initialView
+        case .loading:
+          progressView
+        case .loaded:
+          tabsView
+        }
+      }
+      .navigationTitle("Activity Board")
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          Button(action: {
+            viewModel.presentingSettings = true
+          }, label: {
+            Image(systemName: "gearshape.fill")
+          })
+          .sheet(isPresented: $viewModel.presentingSettings) {
+            SettingsView(presentedAsModal: $viewModel.presentingSettings)
+          }
+        }
       }
     }
+    .accentColor(Color(UIColor.label))
   }
   
   var initialView: some View {
@@ -37,14 +53,14 @@ struct ActivityBoardView: View {
   }
   
   var tabsView: some View {
-    TabView {
-      ForEach(viewModel.subscribingActivityTypes, id: \.self) { type in
-        ActivitiesListView(activityType: type, numberOfResult: viewModel.expectingActivitiesAmount)
+    ScrollView {
+      LazyVStack {
+        ForEach(viewModel.subscribingActivityTypes, id: \.self) { type in
+          ActivitiesListView(activityType: type, numberOfResult: viewModel.expectingActivitiesAmount)
+        }
       }
     }
-    .tabViewStyle(PageTabViewStyle())
-    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-    .edgesIgnoringSafeArea([.top, .bottom])
+    .edgesIgnoringSafeArea([.bottom])
   }
 }
 

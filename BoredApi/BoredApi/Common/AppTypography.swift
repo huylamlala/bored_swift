@@ -10,16 +10,22 @@ import SwiftUI
 enum AppTypography {
   case title
   case heading
+  case subHeading
   case body
+  case button
   
   var fontSize: CGFloat {
     switch self {
     case .title:
       return 24
     case .heading:
+      return 20
+    case .subHeading:
       return 18
     case .body:
       return 15
+    case .button:
+      return 14
     }
   }
   
@@ -29,8 +35,12 @@ enum AppTypography {
       return .bold
     case .heading:
       return .medium
+    case .subHeading:
+      return .semibold
     case .body:
       return .light
+    case .button:
+      return .bold
     }
   }
 }

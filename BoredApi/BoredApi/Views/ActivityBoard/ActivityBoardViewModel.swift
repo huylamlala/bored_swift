@@ -17,17 +17,29 @@ class ActivityBoardViewModel: ObservableObject {
   @Published var state: ViewStates = .initial
   @Published var expectingActivitiesAmount: ExpectingActivitiesAmount = .five
   @Published var subscribingActivityTypes = ActivityType.allCases
+  @Published var presentingSettings = false
   private var cancellableSet: Set<AnyCancellable> = []
   var activityService: ActivityService!
   
   func setupBinding() {
+    $presentingSettings
+      .filter { !$0 }
+      .sink { [weak self] _ in
+        self?.reloadData()
+      }
+      .store(in: &cancellableSet)
+  }
+  
+  func reloadData() {
     state = .loading
     activityService.getExpectingActivitiesAmount()
       .sink { [weak self] in self?.expectingActivitiesAmount = $0 }
-      .store(in: &cancellableSet)
+      .cancel()
     activityService.getSubscribingActivityTypes()
-      .sink { [weak self] in self?.subscribingActivityTypes = $0 }
-      .store(in: &cancellableSet)
+      .sink { [weak self] in
+        self?.subscribingActivityTypes = $0.isEmpty ? ActivityType.allCases : $0
+      }
+      .cancel()
     state = .loaded
   }
 }

@@ -12,6 +12,10 @@ protocol ActivityService {
   func getActivity(with route: ActivityURLRequests) -> AnyPublisher<Result<Activity, APIError>, Never>
   func getSubscribingActivityTypes() -> AnyPublisher<[ActivityType], Never>
   func getExpectingActivitiesAmount() -> AnyPublisher<ExpectingActivitiesAmount, Never>
+  
+  func subscribeActivityType(_ activityType: ActivityType)
+  func unsubscribeActivityType(_ activityType: ActivityType)
+  func setExpectingActivitiesAmount(_ expectingActivitiesAmount: ExpectingActivitiesAmount)
 }
 
 struct ActivityServiceMock: ActivityService {
@@ -27,4 +31,10 @@ struct ActivityServiceMock: ActivityService {
     return Just<Result<Activity, APIError>>(.success(Activity.draftModel))
       .eraseToAnyPublisher()
   }
+  
+  func subscribeActivityType(_ activityType: ActivityType) {}
+  
+  func unsubscribeActivityType(_ activityType: ActivityType) {}
+  
+  func setExpectingActivitiesAmount(_ expectingActivitiesAmount: ExpectingActivitiesAmount) {}
 }

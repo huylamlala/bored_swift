@@ -16,29 +16,33 @@ struct ActivitiesListView: View {
   let numberOfResult: ExpectingActivitiesAmount
   @EnvironmentObject var envSettings: EnvironmentSettings
   @ObservedObject var viewModel = ActivitiesListViewModel()
+  @State var selection: Int? = nil
   
   var body: some View {
-    VStack {
-      HStack {
-        Text(activityType.rawValue.uppercased())
-          .scaledFont(appTypography: .title)
-          .padding(.all, 8)
-        Spacer()
-      }
-      Group {
-        switch viewModel.state {
-        case .initial:
-          initialView
-        case .error(let error):
-          buildErrorView(error: error)
-        case .activitiesLoaded(let activities):
-          buildActivityViews(activities)
-        case .loading:
-          progressView
+      VStack {
+        HStack {
+          Text(activityType.rawValue.uppercased())
+            .scaledFont(appTypography: .heading)
+            .padding(.top)
+            .padding(.leading, 8)
+          Spacer()
         }
+        Group {
+          switch viewModel.state {
+          case .initial:
+            initialView
+          case .error(let error):
+            buildErrorView(error: error)
+          case .activitiesLoaded(let activities):
+            buildActivityViews(activities)
+          case .loading:
+            progressView
+          }
+        }
+        Spacer()
+        Divider()
       }
-      Spacer()
-    }
+    
   }
   
   var progressView: some View {
@@ -65,30 +69,34 @@ struct ActivitiesListView: View {
     VStack {
       ForEach(activities, id: \.activity) { activity in
         buildActivityCard(activity)
-          .padding()
+          .padding(.horizontal)
+          .padding(.bottom)
       }
       Spacer()
     }
   }
   
   func buildActivityCard(_ activity: Activity) -> some View  {
-    VStack(alignment: .leading) {
-      Text(activity.activity)
-        .lineLimit(2)
-        .fixedSize(horizontal: false, vertical: true)
-        .multilineTextAlignment(.leading)
-        .scaledFont(appTypography: .heading)
-      Spacer()
-      HStack {
-        Label("\(activity.participants)", systemImage: "person.3")
+    NavigationLink(destination: ActivityDetailView(activity: activity)) {
+      VStack(alignment: .leading) {
+        Text(activity.activity)
+          .lineLimit(2)
+          .fixedSize(horizontal: false, vertical: true)
+          .multilineTextAlignment(.leading)
+          .scaledFont(appTypography: .subHeading)
         Spacer()
-        Label(String(format: "%.2f", activity.accessibility), systemImage: "heart.fill")
-          .padding(.trailing, 20)
+        HStack {
+          Label("\(activity.participants)", systemImage: "person.3.fill")
+          Spacer()
+          Label(String(format: "%.2f", activity.accessibility), systemImage: "heart.fill")
+            .padding(.trailing, 20)
+        }
+        .scaledFont(appTypography: .body)
       }
-      .scaledFont(appTypography: .body)
+      .foregroundColor(Color(UIColor.label))
+      .padding()
+      .background(Color(UIColor.systemGroupedBackground))
+      .cornerRadius(25)
     }
-    .padding()
-    .background(Color(UIColor.systemGroupedBackground))
-    .cornerRadius(25)
   }
 }
