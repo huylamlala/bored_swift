@@ -18,7 +18,7 @@ protocol ActivityService {
   func setExpectingActivitiesAmount(_ expectingActivitiesAmount: ExpectingActivitiesAmount)
 }
 
-struct ActivityServiceMock: ActivityService {
+struct ActivityServicePreview: ActivityService {
   func getSubscribingActivityTypes() -> AnyPublisher<[ActivityType], Never>  {
     return Just([.education, .busywork, .charity]).eraseToAnyPublisher()
   }

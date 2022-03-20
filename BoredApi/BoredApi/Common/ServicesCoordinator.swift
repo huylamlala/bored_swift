@@ -11,7 +11,7 @@ enum ServicesCoordinator {
   static func buildActivityService(in env: Environment) -> ActivityService {
     switch env {
     case .preview:
-      return ActivityServiceMock()
+      return ActivityServicePreview()
     case .dev:
       return ActivityNetworkingServices()
     }

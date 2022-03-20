@@ -62,7 +62,7 @@ struct ActivityBoardView: View {
     }
     .tabViewStyle(PageTabViewStyle())
     .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-    .edgesIgnoringSafeArea([.top, .bottom])
+    .edgesIgnoringSafeArea([.bottom])
   }
 }
 
